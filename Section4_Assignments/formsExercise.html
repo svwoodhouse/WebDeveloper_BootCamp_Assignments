@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+    <body>
+     <h1>Register</h1>
+     <form action="">
+         <!-- Asks for the user's first and last name-->
+         <label for="userFirstName">First Name: </label>
+         <input type="text" id="userFirstName" placeholder="John" required>
+         <label for="userLastName">Last Name: </label>
+         <input type="text" id="userLastName" placeholder="Smith" required>
+
+         <!-- Asks the user for their gender-->
+         <div>
+            <label for="male">Male</label>
+            <input id="male" name = "genderChoice" type="radio" value="Male">
+            <label for="female">Female</label>
+            <input id="female" name ="genderChoice"type="radio"value="Female">
+            <label for="other">Other</label>
+            <input id="other" name ="genderChoice"type="radio"value="Other">
+        </div>
+
+        <!-- Asks the user for their email and password-->
+        <div>
+            <label for="email">Email: </label>
+            <input type="email"id="email" placeholder="your email" required>
+            <label for="password">Password: </label>
+            <input type="password" id="password" placeholder="your password" minlength="5" maxlength="10" >
+        </div>
+
+        <!-- Asks the user for their Birthday-->
+        <div>
+            <label for="birthday">Birthday: </label>
+            <select name="Month" id="birthday">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+            </select>
+            <select name="Day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+            </select>
+            <select name="Year">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+            </select>
+        </div>
+
+         <!-- Asks the user agree to terms and conditions-->
+         <div>
+            <label for="termsCheckBox">I agree to terms and conditions</label>
+            <input type="checkbox" id="termsCheckBox">
+        </div>
+
+         <button>Submit</button>
+     </form>   
+    </body>
+</html>
