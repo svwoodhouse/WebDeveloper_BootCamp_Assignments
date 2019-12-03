@@ -1,0 +1,11 @@
+li {
+    border: 2px solid red;
+}
+
+#yellowListItem {
+    background-color: yellow;
+}
+
+.completedListItems {
+    text-decoration: line-through;
+}

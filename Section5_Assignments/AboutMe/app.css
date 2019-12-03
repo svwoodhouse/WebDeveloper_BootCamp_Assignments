@@ -1,8 +1,14 @@
 h1 {
     color:rgba(0, 200, 100, 0.8);
+    
+/*
+    You need to set the border color, width and the style fo rit to appear
+    This can be done seperately as shown below or you can do all three attributes
+    by way of border. 
     border-color: purple;
     border-width: 5px;
     border-style: solid;
+*/
 
     border: 5px solid purple;
 }

@@ -1,0 +1,50 @@
+/* Element 
+li {
+
+}*/
+/* Class 
+.hello { 
+
+}*/
+/* ID 
+#name {
+
+}*/
+
+/* Star */
+/* Applies to every single element on the page */
+* {
+    border: 1px solid lightgray;
+}
+
+/* Descendant Selector */
+/* Takes 2 or more selectors*/
+/* In this example, we will apply CSS changes to all anchor tags inside an li only*/
+/* Selects all anchor tags that are descendants of the li*/
+li a {
+    color: red;
+}
+
+/* Adjacent Selector */
+/* Selects elements after another element; selects sibling*/
+/* In this example, it is looking for ul that are adjacent to h4 */
+h4 + ul {
+border: 4px solid red;
+}
+
+/* Attribute Selector */
+/* Way to select elements based on any attributes*/
+/* In this example, we will select an href attribute and check the links to see if the link is google.com*/
+/* Selects every anchor tag with href = to google.com*/
+a[href="http://www.google.com"] {
+    background-color: blue;
+}
+
+/* nth of type  */
+/* Takes a number and selects the nth of that element */
+/* In this example it changes the 3rd li in the group*/
+li:nth-of-type(3)
+{
+    background: purple;
+}
+
