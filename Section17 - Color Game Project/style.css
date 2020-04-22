@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+    background-color: rgb(51, 47, 47);
+}
+
+#banner1 {
+    background-color: rgb(29, 132, 192);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: white;
+}
+
+#banner2 {
+    background-color: white;
+    color: rgb(29, 132, 192);;
+}
