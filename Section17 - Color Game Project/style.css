@@ -15,3 +15,8 @@ html {
     background-color: white;
     color: rgb(29, 132, 192);;
 }
+
+.selectedButton {
+    background-color:  rgb(29, 132, 192);
+    color: white;
+}
