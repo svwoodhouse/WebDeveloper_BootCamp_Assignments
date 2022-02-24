@@ -8,22 +8,55 @@
 </head>
 <body>
     <h1>Forms Demo</h1>
-    <form action="/tacos"></form>
-    <p>
-        <label for=username>Enter a Username:</label>
-        <input id="username" type="text" placeholder="username">
-    </p>
-    <p>
-        <label for="password">Enter a password:</label>
-        <input id="password" type="password" placeholder="password">
-    </p>
-    <p>
-        <label for="color">Enter a color:</label>
-        <input type="color" id="color">
-    </p>
-    <p>
-        <label for="number">Enter a number:</label>
-        <input type="number" placeholder="Enter a number" id="number">
-    </p>
+    <button>OUTSIDE FORM</button>
+    <form action="/tacos">
+        <button>PLEASE DO NOT SUBMIT THE FORM</button>
+        <p>
+            <label for=username>Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <button>IN THE MIDDLE</button>
+        <p>
+            <label for="color">Enter a color:</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label>
+                Enter a number:
+                <input type="number" placeholder="enter a number" name="number">
+            </label>
+        </p>
+        <button>Submit</button>
+        <input type="submit" value="Click me">
+    </form>
+    <hr>
+    <button>Not Inside Form</button>
+    <h2>Hijacking Searches</h2>
+    <h3>Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <button>Submit</button>
+    </form>
+
 </body>
 </html>

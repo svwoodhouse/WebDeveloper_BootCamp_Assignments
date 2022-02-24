@@ -1,3 +1,18 @@
+//Colors
+var colors = [
+    "rgb(255, 0, 0)",
+    "rgb(255,255,0)",
+    "rgb(0,255,0)",
+    "rgb(0,255,255)",
+    "rgb(0,0,255)",
+    "rgb(255,0,255)",
+]
+
+var squares = document.querySelectorAll(".square");
+for(var i = 0; i < squares.length; i++){
+    squares[i].style.backgroundColor = colors[i]
+}
+
 // Gets the HTML Spans containing the numbers of the RGB colors from 0 - 255
 var rColorSpan = document.getElementById("rSpan");
 var gColorSpan = document.getElementById("gSpan");
@@ -53,3 +68,23 @@ function hardButtonFuntionality(){
     hardButton.addEventListener();
 };
 
+class Human {
+    gender = 'female';
+    
+    printGender = () => {
+      console.log(this.gender);
+    }
+  }
+  
+  class Person extends Human{
+    name = 'Max'
+    gender = 'female'
+    
+    printMyName = () => {
+      console.log(this.name);
+    }
+  }
+  
+  const person = new Person();
+  person.printMyName();
+  person.printGender();
